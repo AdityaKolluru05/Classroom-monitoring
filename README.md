@@ -204,6 +204,19 @@ Connected to MQTT broker
 Subscribed to Topic: channels/3429057/subscribe
 Published message successfully on topic: channels/3429057/publish
 ```
+### 7. Results
+
+**Real-time dashboard**
+
+ThingSpeak visualizes the published temperature, humidity, and noise readings in real time, along with the channel's map location:
+
+![Real-time Dashboard](docs/images/realtime-dashboard.jpeg)
+
+**Email alerts**
+
+When an alert condition is triggered (e.g. high humidity or AC left on), the system sends an email notification via the ThingHTTP → Google Apps Script pipeline:
+
+![Email Alerts](docs/images/email-alerts.jpeg)
 
 ## Security
 
