@@ -144,28 +144,30 @@ cd <PROJECT_DIRECTORY>
 ### 3. Connect the board
 
 Connect the SiWG917 dev kit via USB and verify the serial/debug interface is detected.
-
 ### 4. Configure Wi-Fi and MQTT
 
-- Initialize the network
-- Connect the SiWG917 to the Wi-Fi network
-- Obtain the device IP address
-- Initialize the MQTT client
-- Configure the MQTT connection parameters
-- Connect to the MQTT broker
-- Wait for the broker to confirm the connection
-- Subscribe to the required topics
-- Publish the initial MQTT message
-- Exchange MQTT messages with the broker
-
-Copy `config.h.example` to `config.h` and fill in your values:
+1. Initialize the network
+2. Connect the SiWG917 to the Wi-Fi network
+3. Obtain the device IP address
+4. Initialize the MQTT client
+5. Configure the MQTT connection parameters
+6. Connect to the MQTT broker
+7. Wait for the broker to confirm the connection
+8. Subscribe to the required topics
+9. Publish the initial MQTT message
+10. Exchange MQTT messages with the broker
+11. Go to `project folder -> config -> sl_net_default_values.h` and update the default Wi-Fi credentials:
 
 ```c
-#define WIFI_SSID       "YOUR_WIFI_NAME"
-#define WIFI_PASSWORD   "YOUR_WIFI_PASSWORD"
-#define MQTT_BROKER     "YOUR_MQTT_BROKER"
-#define MQTT_PORT       1883
+#ifndef DEFAULT_WIFI_CLIENT_PROFILE_SSID
+#define DEFAULT_WIFI_CLIENT_PROFILE_SSID   "YOURSSID"
+#endif
+
+#ifndef DEFAULT_WIFI_CLIENT_CREDENTIAL
+#define DEFAULT_WIFI_CLIENT_CREDENTIAL     "Password"
+#endif
 ```
+
 
 `config.h` is gitignored — never commit real credentials.
 
