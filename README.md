@@ -148,7 +148,7 @@ Connect the SiWG917 dev kit via USB and verify the serial/debug interface is det
 ### 4. Configure Wi-Fi and MQTT
 
 
-Step 4 — Configure and establish MQTT communication
+
 
 -Initialize the network.
 -Connect the SiWG917 to the Wi-Fi network.
