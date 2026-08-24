@@ -147,7 +147,19 @@ Connect the SiWG917 dev kit via USB and verify the serial/debug interface is det
 
 ### 4. Configure Wi-Fi and MQTT
 
-Copy `config.h.example` to `config.h` and fill in your values:
+
+Step 4 — Configure and establish MQTT communication
+
+Initialize the network.
+Connect the SiWG917 to the Wi-Fi network.
+Obtain the device IP address.
+Initialize the MQTT client.
+Configure the MQTT connection parameters.
+Connect to the MQTT broker.
+Wait for the broker to confirm the connection.
+Subscribe to the required topics.
+Publish the initial MQTT message.
+Exchange MQTT messages with the broker.
 
 ```c
 #define WIFI_SSID       "YOUR_WIFI_NAME"
