@@ -167,6 +167,21 @@ Connect the SiWG917 dev kit via USB and verify the serial/debug interface is det
 #define DEFAULT_WIFI_CLIENT_CREDENTIAL     "Password"
 #endif
 ```
+12. For MQTT client initialization, go to `app.c` and make the following changes:
+
+| Parameter | Value in the Project |
+|---|---|
+| **Client ID** | `ORUKEDwoNSQ5JxQMLB0UIgM` |
+| **Broker IP** | `18.207.44.162` |
+| **Broker Port** | `1883` |
+| **Clean Session** | `1` (Enabled) |
+| **Last Will Topic** | `gitam/revanth/monitor/status` |
+| **Last Will Message** | `{"device":"SIWG917","status":"OFFLINE"}` |
+| **Published Topic** | `channels/3429057/publish` |
+| **Published Message** | `field1=45&field2=60&field3=35` |
+| **Publish QoS** | `0` |
+| **Last Will QoS** | `1` |
+| **Last Will Retained** | `1` |
 
 
 `config.h` is gitignored — never commit real credentials.
