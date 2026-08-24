@@ -216,7 +216,7 @@ ThingSpeak visualizes the published temperature, humidity, and noise readings in
 
 When an alert condition is triggered (e.g. high humidity or AC left on), the system sends an email notification via the ThingHTTP → Google Apps Script pipeline:
 
-![Email Alerts](docs/images/email-alerts.jpeg)
+![Email Alerts](EmailAlerts.jpeg)
 
 ## Security
 
