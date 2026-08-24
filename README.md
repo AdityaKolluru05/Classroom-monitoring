@@ -190,22 +190,19 @@ Connect the SiWG917 dev kit via USB and verify the serial/debug interface is det
 
 Build using the SiWG917 toolchain, then flash the firmware to the board.
 
+
 ### 6. Monitor output
 
 Expected serial output:
 
 ```
-Wi-Fi Connected
-IP Address: xxx.xxx.xxx.xxx
-
-MQTT Connected
-
-Temperature: 27.4 °C
-Humidity: 64.2 %
-Noise Level: XX
-
-Publishing sensor data...
-Publish successful
+Wi-Fi client interface up Success
+Wi-Fi client connected
+Init MQTT client Success
+MQTT broker connection started
+Connected to MQTT broker
+Subscribed to Topic: channels/3429057/subscribe
+Published message successfully on topic: channels/3429057/publish
 ```
 
 ## Security
