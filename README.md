@@ -210,7 +210,7 @@ Published message successfully on topic: channels/3429057/publish
 
 ThingSpeak visualizes the published temperature, humidity, and noise readings in real time, along with the channel's map location:
 
-![Real-time Dashboard](docs/images/realtime-dashboard.jpeg)
+![Real-time Dashboard](RealtimeDashboard.jpeg)
 
 **Email alerts**
 
