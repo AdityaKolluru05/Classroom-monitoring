@@ -54,13 +54,16 @@ MQTT is used for its lightweight publish/subscribe model, well suited to IoT and
 
 ## Software and Tools
 
-- Simplicity Studio 6
-- WiseConnect SDK
-- Visual Studio Code
-- C
-- MQTT
-- ThingSpeak
-- Git / GitHub
+| Tool                    | Purpose                                                     |
+| ----------------------- | ----------------------------------------------------------- |
+| **Simplicity Studio 6** | Build, debug, and flash the SiWG917 application             |
+| **WiseConnect SDK**     | Provides SiWG917 networking, sensor, and MQTT APIs          |
+| **Visual Studio Code**  | Source-code editing and project management                  |
+| **C**                   | Application and embedded firmware development               |
+| **MQTT**                | Transfers sensor data to the cloud                          |
+| **ThingSpeak**          | Cloud storage, visualization, and monitoring of sensor data |
+| **Git / GitHub**        | Version control and project repository management           |
+
 
 ## System Workflow
 
