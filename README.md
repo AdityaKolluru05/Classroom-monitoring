@@ -251,7 +251,7 @@ Smart classrooms · smart buildings · indoor air monitoring · labs · offices 
 ## Contributors
 
 - Aditya Kolluru
-- _Add other team members here_
+- Revanth Dhulipudi
 
 ## License
 
