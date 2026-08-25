@@ -248,13 +248,9 @@ Never commit: Wi-Fi passwords, MQTT credentials, API keys, ThingSpeak credential
 
 ## Future Enhancements
 
-- Edge AI-based anomaly detection
-- Automatic HVAC control
-- Occupancy detection
-- Adaptive sampling
-- Multi-classroom / centralized dashboard
-- TLS-secured MQTT
-- Historical data analysis and prediction
+| Evolution | Future Enhancement | Purpose / Benefit |
+|---|---|---|
+| **Direct Edge Alerting** | Enable the SiWG917 to detect abnormal temperature/humidity conditions locally and trigger an email alert through a secure communication service. | Provides faster notification by allowing the device to respond immediately to locally detected environmental conditions. |
 
 ## Applications
 
