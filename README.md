@@ -109,7 +109,7 @@ MQTT is used for its lightweight publish/subscribe model, well suited to IoT and
 Example condition used during development:
 
 ```
-Temperature < 15 °C  AND  Humidity > 85 %
+Temperature < 15 °C  OR  Humidity > 85 %
 ```
 
 ```
