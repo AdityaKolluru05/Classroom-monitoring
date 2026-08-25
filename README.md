@@ -21,19 +21,43 @@ The system periodically collects sensor data and publishes it through an **MQTT 
 
 ```
 Classroom Sensors (Temp / Humidity / Noise)
+   Purpose: physically sense environmental conditions in the room
             |
             v
         SiWG917
-  (acquisition, processing, Wi-Fi, MQTT client)
+   Purpose: acquire sensor readings, connect to Wi-Fi, and
+            publish data as an MQTT client
             |
             v
    ThingSpeak MQTT Broker
+   Purpose: receive published MQTT messages and route them
+            into the correct channel/fields
             |
             v
    ThingSpeak Channel / Dashboard
+   Purpose: store time-series data and provide built-in charts
+            for temperature, humidity, and noise
             |
             v
-   Alert / Notification System
+        React
+   Purpose: ThingSpeak app that watches channel data and, when
+            a condition is met (temp < 15°C OR humidity > 85%),
+            triggers an action — here, calling ThingHTTP
+            |
+            v
+       ThingHTTP
+   Purpose: receives the trigger from React and sends an
+            outbound HTTP request
+            |
+            v
+   Google Apps Script
+   Purpose: receives the ThingHTTP request and sends the
+            actual email
+            |
+            v
+   Email Notification
+   Purpose: notifies the operator (e.g. "AC IS LEFT ON!!",
+            "HIGH HUMIDITY!!")
 ```
 
 ## Communication Protocol
