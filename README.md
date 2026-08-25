@@ -113,7 +113,7 @@ Temperature < 15 °C  OR  Humidity > 85 %
 ```
 
 ```
-ThingSpeak --trigger--> ThingHTTP --HTTP request--> Google Apps Script --> Email Notification
+ThingSpeak Channel --trigger(Sent by React)--> ThingHTTP --HTTP request--> Google Apps Script --> Email Notification
 ```
 
 ## Data Fields
