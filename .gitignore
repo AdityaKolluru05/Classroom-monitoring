@@ -1,0 +1,11 @@
+config.h
+GNU ARM v*/
+.metadata/
+.settings/
+*.o
+*.axf
+*.hex
+*.map
+cmake_gcc/build/
+*/wiseconnect3_sdk_*/
+*/simplicity_sdk_*/
