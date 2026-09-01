@@ -268,10 +268,10 @@ Smart classrooms · smart buildings · indoor air monitoring · labs · offices 
 | Dev Environment | Simplicity Studio 6 / WiseConnect SDK |
 | Parameters | Temperature, Humidity, Noise Level |
 
-## Contributors
+## Contributors and their Github profile
 
-- Aditya Kolluru
-- Revanth Dhulipudi
+- Aditya Kolluru(https://github.com/AdityaKolluru05)
+- Revanth Dhulipudi(https://github.com/Revanth2k06)
 
 ## License
 
